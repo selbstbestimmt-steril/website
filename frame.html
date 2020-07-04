@@ -1,6 +1,12 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>
+    <style>
+      iframe {
+        width: 80vw;
+        height: 80vh;
+      }
+    </style>
   </head>
   <body>
     <p>
@@ -8,12 +14,15 @@
       cumque iusto molestiae sit, natus temporibus numquam, reprehenderit modi
       magni aspernatur adipisci inventore neque nisi. Fuga ab quasi ipsum in.
     </p>
-    <iframe src="/" />
+    <iframe id="myIframe" src="/">
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
       ullam error magnam nobis consectetur perspiciatis cupiditate consequatur
       ipsum aliquam amet repellat at eaque deleniti adipisci inventore corrupti
       quas, a voluptatum.
     </p>
+    <script>
+      iFrameResize({ log: true }, "#myIframe");
+    </script>
   </body>
 </html>
